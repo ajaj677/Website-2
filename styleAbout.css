@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: Everette;
+    src: url(fonts/TWKEverett-Light.ot);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Host Grotesk';
+  font-size: 300;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 0;
+}
+header {
+  background-color: #ffa500;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+.school-info h1 {
+  font-family: 'Host Grotesk', serif;
+  font-size: 2rem;
+}
+.school-info p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+.about-hero {
+  background-color: #eef5fb;
+  padding: 40px 0;
+  text-align: center;
+}
+.about-hero h2 {
+  font-size: 1.8rem;
+  color: #1d1d1d;
+  margin-bottom: 10px;
+}
+.about-hero p {
+  font-size: 1.1rem;
+}
+.history-section h3 {
+  color: #1d1d1d;;
+  margin-top: 30px;
+  font-size: 1.4rem;
+}
+.history-section p,
+.history-section ul {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+.history-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.statistics-section {
+  margin-top: 40px;
+}
+.statistics-section h3 {
+  color: #00264d;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+.stats-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+}
+.stats-grid div {
+  background: #fff;
+  padding: 15px;
+      border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 6px;
+
+  font-size: 1rem;
+}
+footer {
+  background-color:#ffa500;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 60px;
+}

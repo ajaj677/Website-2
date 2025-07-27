@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nutan Vidhyamandir - Admission Form</title>
+  <link rel="stylesheet" href="styleAdm.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Serif:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <img src="images/logo.jpeg" alt="School Logo" class="logo" />
+      <div class="school-info">
+        <h1>Nutan Vidhyamandir</h1>
+        <p>Affiliated to Maharashtra State Board | Estd. 1975</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- <section class="hero">
+    <div class="hero-overlay">
+      <h2>Admission Open 2025-26</h2>
+      <p>Shape your child's future with quality education</p>
+    </div>
+  </section> -->
+
+  <section class="form-section">
+    <div class="container">
+      <h3>Student Admission Form</h3>
+      <form class="admission-form">
+        <div class="form-group">
+          <label for="studentName">Full Name of Student</label>
+          <input type="text" id="studentName" name="studentName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+
+        <div class="form-group">
+          <label for="class">Applying for Class</label>
+          <select id="class" name="class" required>
+            <option value="">-- Select Class --</option>
+            <option value="nursery">Nursery</option>
+            <option value="kg">KG</option>
+            <option value="1">1st Standard</option>
+            <option value="2">2nd Standard</option>
+            <option value="3">3rd Standard</option>
+            <!-- Add more classes as needed -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="fatherName">Father's Name</label>
+          <input type="text" id="fatherName" name="fatherName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="motherName">Mother's Name</label>
+          <input type="text" id="motherName" name="motherName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="contact">Parent's Contact Number</label>
+          <input type="tel" id="contact" name="contact" required pattern="[0-9]{10}" />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Residential Address</label>
+          <textarea id="address" name="address" rows="3" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2025 Nutan Vidhyamandir. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
