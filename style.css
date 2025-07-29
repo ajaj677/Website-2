@@ -11,19 +11,42 @@
   font-family: 'Host Grotesk';
   font-size: 300;
 }
+/* Webkit-based browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* Hide scrollbar but still scrollable*/
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  -ms-overflow-style: none;  /* IE/Edge */
 }
+ 
+
 
 body {
   background-color: #f4f6f9;
   color: #000;
 
-}
-
-body::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
 }
 
 /* Navbar */
@@ -33,7 +56,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffa500;
+    background-color: #00264d;
     padding: 1px 20px 2px  20px;
     z-index: 10;
 }
@@ -106,6 +129,7 @@ padding: 10px 35px 10px 10px;
   display: flex;
   height: calc(100vh - 60px);
   overflow: auto;
+  height: 100%;
 }
 
 .left-panel {
@@ -117,11 +141,6 @@ padding: 10px 35px 10px 10px;
   top: 4.5em;
   bottom: 0;
   overflow-y: auto;
-}
-
-.left-panel::-webkit-scrollbar{
-  display: none; /* Chrome/Safari */
-  scrollbar-width: none; 
 }
 
 
@@ -193,10 +212,6 @@ padding: 10px 35px 10px 10px;
     height: 100%
 }
 
-.right-panel::-webkit-scrollbar{
-
-  scrollbar-width: none; 
-}
 
 .image-placeholder {
   width: 100%;
